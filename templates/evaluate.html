@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Evaluate{% endblock %}
+{% block content %}
+    <h1>Text evaluation</h1>
+{#    <form class="form-inline my-2 my-lg-0 form-search" action="/search">#}
+{#        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="q" value="{{ q }}">#}
+{#        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+{#    </form>#}
+
+    <div class="form-group shadow-textarea">
+        <label for="textEvaluationArea">Text evaluation</label>
+        <textarea class="form-control z-depth-1" id="textEvaluationArea" rows="5" placeholder="Enter some text to evaluate..."></textarea>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submitText">Search</button>
+    </div>
+    <div class="results" id="evalResults">
+    </div>
+
+
+
+
+
+
+{% endblock %}
